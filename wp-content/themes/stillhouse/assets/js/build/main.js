@@ -176,33 +176,33 @@ jQuery.easing.jswing=jQuery.easing.swing;jQuery.extend(jQuery.easing,{def:"easeO
      * =========
     */
 
-    if($('section#instagram').length){
+    // if($('section#instagram').length){
       
-      instaFeed = new Instafeed({
-        get: 'user',
-        userId: 458786271,
-        // accessToken: '293430160.467ede5.9e038f0622f244cea4ed877564dda070',
-        accessToken: '14688651.467ede5.a96ae8956b9948bbb55cd2d5bde8efa1',
-        target: "instagram-gallery",
-        limit: browserIsMobile ? 4 : 8,
-        resolution: 'standard_resolution',
-        template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /></a></li>',
-        before: function(){
-          $("#instagram-gallery").empty().html('<div id="instagram-loading" class="text-center">Loading...</div>');
-        },
-        success: function(){
-          $("#instagram-loading").remove();
-        },
-        // after: function(){
-        // },
-        error: function(){
-          $("#instagram-gallery").empty().html('<div id="instagram-loading" class="text-center">Whoops!<br/>Something went wrong fetching images.</div>')
-        }
-      });
+      // instaFeed = new Instafeed({
+      //   get: 'user',
+      //   userId: 458786271,
+      //   // accessToken: '293430160.467ede5.9e038f0622f244cea4ed877564dda070',
+      //   accessToken: '14688651.467ede5.a96ae8956b9948bbb55cd2d5bde8efa1',
+      //   target: "instagram-gallery",
+      //   limit: browserIsMobile ? 4 : 8,
+      //   resolution: 'standard_resolution',
+      //   template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /></a></li>',
+      //   before: function(){
+      //     $("#instagram-gallery").empty().html('<div id="instagram-loading" class="text-center">Loading...</div>');
+      //   },
+      //   success: function(){
+      //     $("#instagram-loading").remove();
+      //   },
+      //   // after: function(){
+      //   // },
+      //   error: function(){
+      //     $("#instagram-gallery").empty().html('<div id="instagram-loading" class="text-center">Whoops!<br/>Something went wrong fetching images.</div>')
+      //   }
+      // });
 
-      instaFeed.run();
+      // instaFeed.run();
 
-    }
+    // }
      /* 
      * END INSTAGRAM
      * =============
