@@ -1,0 +1,30 @@
+.about-blurb {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.about-bottles {
+  @extend .img-responsive;
+  margin: 0;
+  margin-top: -100px;
+}
+
+@media (max-width: $screen-md-max) {
+  .about-bottles {
+    width: 120%;
+    max-width: 120%;
+    margin-left: -10%;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .about-blurb {
+    column-count: 2;
+    // column-gap: 40px;
+    column-gap: 60px;
+    text-align: left;
+  }
+  .about-bottles {
+    margin-top: -200px;
+  }
+}

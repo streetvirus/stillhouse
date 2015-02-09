@@ -1,0 +1,240 @@
+$map-bg: darken($white, 8%);
+
+@mixin map-form-borders() {
+  border-right: 1px solid darken($map-bg, 20%);
+  border-left: 1px solid darken($map-bg, 20%);
+  border-color: transparentize(darken($map-bg, 20%), 0.15)
+}
+
+.section-map {
+  padding: 0;
+}
+
+#wpsl-gmap {
+  width:100% !important;
+  max-height: 200px;
+}
+#wpsl-wrap {
+  position: relative;
+  margin-bottom: 0 !important;
+  background-color: #FFF;
+  color: darken($sh-brown, 8%);
+  font-size: $font-size-small;
+}
+
+.wpsl-search {
+  margin: 0;
+  height: 125px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include clearfix;
+
+  position: relative;
+  box-shadow: 0 4px 15px -10px #646464;
+  border-bottom: 1px solid #B3B3B3;
+  border-bottom-color: transparentize(#B3B3B3, 0.6);
+
+  background-color: $map-bg;
+  background-color: transparentize($map-bg, 0.15) !important;
+}
+
+.wpsl-preloader {
+  padding: 0;
+  text-align: center;
+  img {
+    height: 12px;
+    width: 12px;
+    margin-right: 5px;
+    margin-left: - (12px / 2);
+  }
+}
+
+#wpsl-result-list {
+  background-color: $map-bg;
+  background-color: transparentize($map-bg, 0.15) !important;
+  border-bottom: 1px solid #B3B3B3;
+  overflow: scroll;
+  max-height: 150px;
+}
+
+#wpsl-direction-details {
+  display: none;
+}
+
+#wpsl-stores {
+  font-style: italic;
+  padding: 15px;
+  // max-height: 150px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lighten($sh-brown, 20%);
+    border-bottom-color: transparentize(lighten($sh-brown, 20%), 0.6);
+  
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  p {
+    margin-bottom: 3px;
+  }
+
+  strong {
+    display: block;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    font-family: "Trade Gothic Lt Std Cn", $font-family-serif;
+    font-style: normal;
+  }
+  .wpsl-street, 
+  .wpsl-country, 
+  .wpsl-directions {
+    display: inline-block;
+    padding-right: 2px;
+    font-size: 13px;
+    font-style: italic;
+    letter-spacing: 0.05em;
+  }
+  .wpsl-country {
+    display: none;
+  }
+}
+
+label[for="wpsl-search-input"] {
+  display: none !important;
+}
+#wpsl-search-input#wpsl-search-input {
+  color: $black;
+  width: 100% !important;
+  font-family: "Trade Gothic Lt Std Cn", $font-family-serif;
+  font-size: $font-size-small;
+  padding: 2px 10px 0;
+  margin-bottom: 10px;
+  line-height: 22px;
+  border: 1px solid $sh-brown;
+  text-align: center;
+}
+
+.search-heading {
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  letter-spacing: 1px;
+}
+
+#wpsl-radius,
+#wpsl-results,
+.wpsl-directions {
+  display: none !important;
+}
+
+.btn-search {
+  background-color: $white;
+  display: block;
+  width: 100%;
+  line-height: 12px;
+}
+
+// GMAP STYLES
+.wpsl-info-window {
+  span {
+    display: inline-block;
+    margin-right: 2px;
+  }
+  p:first-child strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+.wpsl-store-hours {
+  margin-top: 10px; // Match <p> bottom margin
+  p {
+    display: inline-block;
+  }
+}
+.wpsl-info-action {
+  display: none !important;
+}
+
+@media (min-width: $screen-sm-min) {
+  #wpsl-gmap {
+    max-height: none;
+  }
+  .wpsl-wrap {
+    font-size: $font-size-base;
+  }
+
+  .wpsl-search {
+    width:300px;
+    right: 8%;
+    position: absolute;
+    z-index: 2; 
+    @include map-form-borders;
+  }
+
+  .wpsl-input {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .wpsl-select-wrap {
+    display: block;
+  }
+
+  #wpsl-search-wrap {
+    div {
+      margin: 0 !important;
+      float: none !important;
+    }
+  }
+
+  #wpsl-search-btn {
+    color: $sh-brown;
+    border-color: $sh-brown;
+    float: none !important;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white;
+    }
+  }
+
+  #wpsl-result-list {
+    float: none !important;
+    position: absolute;
+    width: 300px !important;
+    height: 275px;
+    max-height: none;
+    margin-right: 0 !important;
+    top: 125px;
+    right: 8%;
+    z-index: 1;
+    border-bottom: none;
+    @include map-form-borders;
+  }
+
+  #wpsl-stores {
+    li {
+      padding-bottom: 10px;
+      padding-left: 20px;
+    }
+    strong {
+      margin-left: -20px;
+      margin-bottom: 5px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}

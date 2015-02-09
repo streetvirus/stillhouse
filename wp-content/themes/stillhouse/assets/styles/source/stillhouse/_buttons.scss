@@ -1,0 +1,79 @@
+.btn.btn-sh {
+  background: url('#{$image-path}/sh-button-border-sprite.png') no-repeat top left;
+  background-size: 110px 380px;
+  background-position-x: 0;
+  width: 110px;
+  height: 33px;
+  padding-top: 10px;
+
+  box-shadow: none;
+  border: none;
+  transition: all 0 linear;
+  -moz-transition: all 0 linear;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: black;
+    transition: all 0 linear;
+    -moz-transition: all 0 linear;
+    &.btn-trans {
+      background-color: transparent;
+    }
+  }
+
+  &.btn-sh--red {
+    background-position: 0 -347px;
+    &:hover,
+    &:focus,
+    &:active {
+      background-position: 0 -309px;
+      color: #BA2526;
+    }
+  }
+  &.btn-sh--orange {
+    background-position: 0 -270px;
+    &:hover,
+    &:focus,
+    &:active {
+      background-position: 0 -232px;
+      color: #C66128;
+    }
+  }
+  &.btn-sh--green {
+    background-position: 0 -193px;
+    &:hover,
+    &:focus,
+    &:active {
+      background-position: 0 -155px;
+      color: #4E873E;
+    }
+  }
+  &.btn-sh--blue {
+    background-position: 0 -39px;
+    &:hover,
+    &:focus,
+    &:active {
+      background-position: 0 0;
+      color: #2E93BA;
+    }
+  }
+
+  &.btn-large {
+    background-size: 180px 684px; // Natural is 442x1680
+    width: 180px; 
+    height: 61px;
+
+    font-size: 20px;
+    padding: 22px 20px 14px;
+    letter-spacing: 1px;
+
+    background-position: 0 -208px; // Brown default
+
+    &:hover,
+    &:focus,
+    &:active {
+      // background-position-y: -139px;
+      color: $sh-brown;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+- Site  should be MOONSHINE.COM (not STILLHOUSE.COM) (at least for the time-being)
+- Site Description (top menu)
+    - “Stillhouse | Just another Wordpress site” – change description
+- Bottle Design “Bottle Stacked Hero Shot” – Please make the labels slightly smaller on the bottles.  Caps still need to be a little lighter so you can see the top of the cap (throughout the site).
+- Navigation Menu
+    - The “buttons” are not currently going to the right place.  For example “LEARN MORE” goes back to the top of the home page.
+    - ~~Space between “Connect” and “Find” is too large. Needs to be same spacing as other menu items~~
+    - ~~Increase font size of menu items~~
+- ~~About:  Change header from “AMERICAN MOONSHINE WHISKEY” to “STILLHOUSE MOONSHINE WHISKEY”~~
+    - ~~“art-form” does not need a hyphen~~
+    - ~~End of first sentence should read “…in a proprietary recipe, and distilling it five times for superior flavor and purity.”~~
+    - When page is a max width, the first word of the third sentence (“unlike) appears at the bottom of the left paragraph. If possible, make that sentence begin at the top of the right paragraph as to not break it up.
+- Homepage recipe paragraph
+    - ~~It says “mafe” – in the description of Stillhouse Original.  This is a typo.  Should be “made.”~~
+    - ~~Second sentence: same thing as 2nd bullet point above, add “and” before distilling~~
+- ~~NOTE:  Move the Flavors section to directly follow Original - - Move the Instagram section down (Instagram shouldn’t divide those 2 sections)~~
+- ~~Change: "Introducing Stillhouse Ready to Serve Flavors” to "Introducing STILLHOUSE Naturally Infused Moonshine"~~
+    - “Learn More” boxes above each flavor
+        - The text “Learn More” is vertically aligned to the bottom of the rectangle. It should be aligned in the center.
+- Flavor Description area (horizontal scrolling)
+    - Red Hot
+        - ~~Brighten the Red on the drop shadow of the logo of RED HOT MOONSHINE.  You cannot see the drop shadow against the black background~~
+        - ~~1st sentence: “…sweet tones of the corn and infused with natural cinnamon…”~~
+        - ~~2nd sentence: revise as follows: “Red Hot is the highest quality and best tasting cinnamon whiskey…period”~~
+    - Peach Tea
+        - ~~Near end of 1st sentence: “…to make a light, sweet and mellow infusion.”~~
+    - Apple
+        - Find a way to not put “STILLHOUSE Apple Crisp Moonshine” at the end of the first sentence and the very start of the next sentence. When scanning from far away, it appears as a typo until you actually read the whole paragraph.
+    - Coconut
+        - ~~1st sentence: missing a “the”~~
+            - ~~“There is something about the sweetness of the corn and the exotic taste…”~~
+        - ~~2nd sentence: replace “distant” with “distinct”~~
+- Map
+    - Have map centered on United States to begin with
+    - Create margins on the top and bottom of the “Find Stillhouse Shine” search box so it fits within the map
+    - Create some type of border (faded, semi-transparent) around the map section so it more easily transitions from the black background of the website to the nearly white background of the map. Otherwise, it’s a pretty harsh transition.
+    - List of stores for find section is already large before typing in a zip code or city. Have it expand downward and populate only after a location is typed in.
+- Sign Up For Newsletter
+    - ~~We do not currently have a newsletter.  Immediately, it should say “Sign Up For STILLHOUSE News”~~
+- Social Media Links at Top and Bottom
+    - ~~Vimeo and FB don’t work~~
+- News Section
+    - Needs to be populated with all of our News Clips.  Stefan has this from SOP
+- Functionality
+    - When scrolling down using a scroll wheel on your mouse, once your arrow gets over the “Map” section, it begins zooming out on the map as it thinks you want to use your scroll wheel there now.
+    - I’m not sure of the options for wordpress, but if possible put in a conditional mouse action of “scroll wheel = not moving” before it would engage the Map.
+- Mobile
+    - Map section
+        - Same thing as scroll wheel problem of map, only with finger swiping. When swiping up to scroll down on site, when you hit the Map section, it thinks you want to move the map. Since the section is very tall, it’s hard to get your finger to below the section to scroll to the bottom of the page.
+- Bottom of the Page Notations:
+    - ~~Make “ENJOY RESPONSIBLY” larger~~
+    - ~~Please add: “Produced & Bottled by STILLHOUSE SPIRITS CO. in Louisville, KY, USA”~~
+- General Note:  When you click on the menu items the box stays around the menu item and does not go away.  Please fix this.
+- Also, STILLHOUSE Vimeo should be up and active so the videos should populate.  Let me know if there is anything you need for this.
+
+-andrei@stillhouse.com
+- M00nsh1n3
+- 310 990 6005

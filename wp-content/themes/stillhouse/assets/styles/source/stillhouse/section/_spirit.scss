@@ -1,0 +1,12 @@
+.section-spirit {
+  @include gradient-vertical($black, lighten($black, 15%));
+}
+
+.spirit-blurb {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: $white;
+  font-family: "Goudy Catalogue MT ST Italic", $font-family-serif;
+  line-height: 30px;
+}

@@ -1,0 +1,64 @@
+
+@import "stillhouse/buttons";
+
+@import "stillhouse/header";
+@import "stillhouse/nav";
+@import "stillhouse/footer";
+
+@import "stillhouse/slick";
+@import "stillhouse/social";
+
+@import "stillhouse/section";
+
+.hr-stillhouse {
+  background: url('#{$image-path}/hr-stillhouse.png') top center no-repeat;
+  background-size: 180px 8px;
+  height: 8px;
+  border: none !important;
+}
+
+#age-check {
+  // display:none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+}
+
+#age-check-popup {
+  width: 90%;
+  max-width: 400px;
+  min-width: 200px;
+  margin: 100px auto 0;
+  background-color: black;
+  border: 1px solid $sh-brown;
+  padding: 10px;
+  text-align: center;
+}
+
+.age-verify-buttons {
+  margin: 20px 0;
+}
+
+#age-check-bg {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.44);
+  z-index: -1;
+}
+
+.age-check-legal {
+  font-size: $font-size-small - 1px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Trade Gothic Lt Std Cn';
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@import "stillhouse/retina";

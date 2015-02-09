@@ -1,0 +1,24 @@
+section {
+  padding: 30px 0;
+}
+
+.section-subtitle {
+  margin-bottom: 30px;
+  line-height: 30px;
+  text-transform: uppercase; 
+  text-align: center;
+}
+
+.section-topstripe {
+  border-top: 1px solid darken($sh-brown, 20%);
+}
+
+@import "section/about";
+@import "section/celebrity";
+@import "section/cocktails";
+@import "section/flavors";
+@import "section/instagram";
+@import "section/map";
+@import "section/menus";
+@import "section/news";
+@import "section/spirit";

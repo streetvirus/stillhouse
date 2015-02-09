@@ -1,0 +1,44 @@
+.social-link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+.social-icon {
+  display: inline-block;
+  height: 27px;
+  width: 27px;
+  background: url('#{$image-path}/social-sprite.png') no-repeat top left;
+  background-size: 20px 141px;
+  background-color: $sh-brown;
+  border-radius: 2px;
+
+  &.social-icon--facebook {
+    background-position: 9px 5px; 
+  } 
+  &.social-icon--instagram {
+    background-position: 7px -36px; 
+  } 
+  &.social-icon--twitter {
+    background-position: 7px -75px; 
+  } 
+  &.social-icon--vimeo {
+    background-position: 7px -114px; 
+  } 
+}
+
+// Link behavior if you want to turn these into links
+a {
+  &.social-icon, 
+  .social-icon {
+    transition: background-color 100ms ease-in-out;
+    &:hover, &:focus {
+      background-color: darken($sh-brown, 10%);
+      transition: background-color 100ms ease-in-out;
+    }
+  }
+}

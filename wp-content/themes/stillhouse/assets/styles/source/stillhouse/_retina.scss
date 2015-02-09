@@ -1,0 +1,22 @@
+// Retina
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+
+  .hr-stillhouse {
+    background-image: url('#{$image-path}/hr-stillhouse@2x.png');
+  }
+
+  header .header-logo {
+    background-image: url('#{$image-path}/logo-knockout-600.png');
+  }
+
+  .social-link {
+    background-image: url('#{$image-path}/social-sprite@2x.png');
+  }
+
+}

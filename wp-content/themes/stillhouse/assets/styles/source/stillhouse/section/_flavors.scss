@@ -1,0 +1,162 @@
+.learn-mores {
+  list-style: none;
+  margin: 0 auto 30px;
+  padding: 0;
+  width: 57%;
+
+  @include clearfix;
+
+  li {
+    width: 25%;
+    float: left;
+    text-align: center;
+  }
+}
+
+.mobile-bottle-flavor {
+  @include opacity(0.4);
+  transition: opacity 100ms ease-in-out;
+  &.mobile-bottle-flavor--current {
+    @include opacity(1);
+    transition: opacity 100ms ease-in-out;
+  }
+}
+
+#flavor-slider {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2
+  }
+  &:before {
+    box-shadow: inset 25px 0px 21px -15px $black;
+  }
+  &:after {
+    box-shadow: inset -25px 0px 21px -15px $black;
+  }
+  .slick-list {
+    z-index: 5;
+  }
+}
+
+.flavor-slide-inner {
+  // padding: 0 30px;
+  @include clearfix;
+}
+.flavor-slide-bottle-wrapper {
+  text-align: right;
+}
+.flavor-slide-bottle { // <img>
+  max-width: 100%;
+  max-height: 420px;
+  display: inline-block !important;
+}
+.flavor-slide-text-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100% 
+}
+
+.flavor-logo {
+  width: 350px;
+  max-width: 100%;
+  margin: 0 auto 5px;
+  position:relative;
+  right: -5px; // Compensate for the registered thing in the logo
+  &.flavor-logo--red    {
+    background-color: #E82F31;
+  }
+  &.flavor-logo--orange {
+    background-color: #C66128;
+  }
+  &.flavor-logo--green  {
+    background-color: #4E873E;
+  }
+  &.flavor-logo--blue   {
+    background-color: #2E93BA;
+  }
+}
+
+.flavor-heading {
+  text-transform: uppercase;
+  margin: 0 0 25px;
+  font-size: 20px;
+  text-align: center;
+  &.flavor-heading--red    {
+    color: #E82F31;
+  }
+  &.flavor-heading--orange {
+    color: #C66128;
+  }
+  &.flavor-heading--green  {
+    color: #4E873E;
+  }
+  &.flavor-heading--blue   {
+    color: #2E93BA;
+  }
+}
+
+.flavor-text-description {
+  line-height: 30px;
+  font-family: "Goudy Catalogue MT ST Italic", $font-family-serif;
+  text-align: center;
+}
+
+#cocktail-slider {
+  margin-top: -30px;
+  .slick-track {
+    height: 250px;
+  }
+  .slick-slide {
+      position: relative;
+  }
+  .img-responsive {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    max-width: 90%;
+    max-height: 100%;
+  }
+}
+
+
+
+@media (min-width: $screen-sm-min) {
+  .flavor-logo {
+    margin-left:0;
+    margin-right:0;
+    right:0;
+  }
+  .flavor-heading {
+    font-size: 22px;
+    text-align: left;
+  }
+  .flavor-text-description {
+    padding-right: 15%;
+    text-align: left;
+  }
+  #cocktail-slider {
+    .slick-track {
+      height: 280px;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .flavor-heading {
+    font-size: 28px; // h3 default
+  }
+  #cocktail-slider {
+    .slick-track {
+      height: 400px;
+    }
+  }
+}

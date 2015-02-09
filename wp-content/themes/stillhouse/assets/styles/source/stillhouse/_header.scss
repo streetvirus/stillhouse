@@ -1,0 +1,68 @@
+header {
+  margin: 20px 0;
+  padding-top: 20px;
+  position: relative;
+  z-index: $zindex-navbar;
+  background-color: $black;
+  border-bottom: 1px solid $black;
+  transition: box-shadow 200ms ease-in-out, border-color 400ms ease-in-out;
+
+  .header-logo {
+    width: 270px;
+    height: 65px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url('#{$image-path}/logo-knockout-300.png') top center no-repeat;
+    background-color: darken($link-color, 3%);
+    background-size: 270px 65px;
+    display: block;
+    margin: 0 auto 20px;
+    transition: background-color 200ms ease-in-out;
+    &:hover {
+      background-color: $white;
+      transition: background-color 200ms ease-in-out;
+    }
+  }
+
+  .header-logo-image {
+    @extend .img-responsive;
+    display: block;
+    width: auto;
+    margin: 0 auto 20px;
+  }
+
+  .social-link-list {
+    text-align: center;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: $white;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  $header-height: 109px;
+  header {
+    height: $header-height;
+    &.header--fixed {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      margin-top: 0;
+      border-color: darken($sh-brown, 20%);
+      box-shadow: 0 0 30px 0 $black;
+      transition: box-shadow 200ms ease-in-out, border-color 400ms ease-in-out;
+
+      + section {
+        margin-top: $header-height + 20px + 20px; // 150px;
+      }
+    }
+  }
+  header .social-link-list {
+    position: absolute;
+    right: ($grid-gutter-width / 2); // Based off the gutter in the grid
+  }
+}

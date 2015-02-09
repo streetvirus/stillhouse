@@ -1,0 +1,56 @@
+.nav {
+  display: none;
+  // margin-top: -17px - 20px;
+}
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Brothers';
+  text-transform: uppercase;
+  font-size: $font-size-large;
+  &.nav-list--left {
+   text-align: left;
+   li {
+    padding-right: 20px;
+    &:last-child {
+      padding-right: 0;
+    }
+   }
+  } 
+  &.nav-list--right {
+   text-align: right;
+   li {
+    padding-left: 20px;
+    &:first-child {
+      padding-left: 0;
+    }
+   }
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .nav {
+    display: block;
+    margin-top: 49px;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .nav-list {
+    &.nav-list--left {
+     li {
+      padding-right: 50px;
+     }
+    } 
+    &.nav-list--right {
+     li {
+      padding-left: 50px;
+     }
+    }
+  }
+}

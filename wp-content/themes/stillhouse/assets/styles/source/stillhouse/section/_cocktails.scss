@@ -1,0 +1,121 @@
+.recipe-display {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: $font-size-small - 1px;
+  p {
+    text-transform: uppercase;
+    font-family: "Trade Gothic Lt Std Cn", inherit;
+    letter-spacing: 2px;
+    margin-bottom: $line-height-computed;
+  }
+}
+
+.recipe-display-content-wrap {
+  @include clearfix;
+}
+
+.recipe-display-inner {
+  padding: 0 30px;
+}
+
+.recipe-image {
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.recipe-title {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: $line-height-computed;
+  text-align: center;
+}
+
+.recipe-directions {
+  ul {
+    padding: 0;
+    text-transform: uppercase;
+    font-family: "Trade Gothic Lt Std Cn", inherit;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    li {
+      margin-bottom: 6px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .recipe-display {
+    display: block;
+    position: relative;
+    width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 50px 45px;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 47px;
+      width: 100%;
+      background-size: 590px 47px;
+      background-repeat: no-repeat;
+      background-position: top left;
+    }
+    &:before {
+      top: 0;
+      background-image: url('#{$image-path}/sh-border-top.png');
+    }
+    &:after {
+      bottom: 0;
+      background-image: url('#{$image-path}/sh-border-bottom.png');
+    }
+  }
+  .recipe-display-inner {
+    padding: 0;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 47px;
+      bottom: 47px;
+      width:19px;
+      background-size: 19px 13px;
+      background-repeat-x: no-repeat;
+      background-position: top left;
+    }
+    &:before {
+      left: 2px;
+      background-image: url('#{$image-path}/sh-border-l.png');
+    }
+    &:after {
+      right: 0;
+      background-image: url('#{$image-path}/sh-border-r.png');
+    }
+  }
+  .recipe-image {
+    max-width: none;
+    max-height: 300px;
+    width: auto;
+    float: right;
+    padding-left: 5px;
+  }
+  .recipe-title {
+    text-align: left;
+    margin-top: $line-height-computed / 2;
+    margin-bottom: $line-height-computed;
+    &:before {
+      content: "\201C"; // left double quotation mark
+    }
+    &:after {
+      content: "\201D"; // right double quotation mark
+    }
+  }
+}

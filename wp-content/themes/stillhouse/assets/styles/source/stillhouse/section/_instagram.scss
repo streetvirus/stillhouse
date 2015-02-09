@@ -1,0 +1,27 @@
+.instagram-gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @include clearfix;
+
+  li {
+    display: inline-block;
+    float: left;
+    padding: 0 10px;
+    margin: 10px 0;
+    width: 50%;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.instagram-gallery-container {
+  margin-bottom: 20px; // 20px + li margin-bottom = 30px ~ section padding
+}
+
+@media (min-width: $screen-md-min) {
+  .instagram-gallery li {
+    width: 25%;
+  }
+}

@@ -1,0 +1,59 @@
+// Override the default slick arrows
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    display: block;
+    height: 50px;
+    width: 15px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    margin-top: -50px;
+    padding: 0;
+    border: none;
+    outline: none;
+    &:hover, &:focus {
+      outline: none;
+      background: transparent;
+      color: transparent;
+      &:before {
+        opacity: $slick-opacity-on-hover;
+      }
+    }
+    &.slick-disabled:before {
+        opacity: $slick-opacity-not-active;
+    }
+}
+.slick-prev:before, .slick-next:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    line-height: 1;
+    font-size: $font-size-base;
+    color: $slick-arrow-color;
+    opacity: $slick-opacity-default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev {
+    left: -25px;
+    &:before {
+        border-width: 25px 15px 25px 0;
+        border-color: transparent $sh-brown transparent transparent;
+    }
+}
+.slick-next {
+    right: -25px;
+    &:before {
+        border-width: 25px 0 25px 15px;
+        border-color: transparent transparent transparent $sh-brown;
+    }
+}
